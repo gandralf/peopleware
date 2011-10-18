@@ -19,8 +19,8 @@ public class PeopleController {
 	}
 
 	@Get
-	@Path("/show")
-	public String show() {
-		return "People: ";
+	@Path("/people/{id}")
+	public String show(int id) {
+		return "People: " + id;
 	}
 }
