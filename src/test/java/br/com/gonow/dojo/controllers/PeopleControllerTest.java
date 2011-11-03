@@ -15,7 +15,7 @@ public class PeopleControllerTest extends WebTestCase {
 	public void shouldGetPeopleById() throws Exception {
 		 visit("/show");
 //		 System.out.println(getContent());
-	     assertHasContent("People: 15");
+	     assertHasContent("Person: 15");
 	}
 	
 
