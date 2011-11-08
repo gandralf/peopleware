@@ -7,7 +7,7 @@
     for (Person person : (List<Person>) request.getAttribute("personList")) {
 
 %>
-<li><%=person.toString() %></li>
+<li><a href="/people/<%=person.getId() %>"><%=person.toString() %></a><a href="/people/<%=person.getId() %>/edit">editar</a></li>
 <%
     }
 %>

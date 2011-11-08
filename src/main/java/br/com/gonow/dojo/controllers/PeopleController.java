@@ -47,4 +47,10 @@ public class PeopleController {
             result.redirectTo(getClass()).show(person.getId());
         }
     }
+
+    @Path("/people/{id}/edit")
+    public Person edit(long id){
+
+        return people.get(id);
+    }
 }
