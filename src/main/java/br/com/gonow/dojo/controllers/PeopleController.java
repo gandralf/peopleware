@@ -27,12 +27,9 @@ public class PeopleController {
 	}
 
     @Path("/people/new")
-    public Person newPerson() {
-       return newPerson(new Person());
-    }
-
     public Person newPerson(Person person) {
-       return person;
+       // First time, create a empty person
+       return person == null ? new Person() : person;
     }
 
     @Post
