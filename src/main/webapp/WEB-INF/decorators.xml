@@ -1,0 +1,5 @@
+<decorators defaultdir="/layouts">
+    <decorator name="main" page="main.ftl">
+          <pattern>/*</pattern>
+    </decorator>
+</decorators>

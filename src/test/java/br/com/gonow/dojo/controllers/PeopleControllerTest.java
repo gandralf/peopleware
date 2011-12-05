@@ -7,16 +7,15 @@ public class PeopleControllerTest extends WebTestCase {
 	
 	@Test
 	public void shouldGetAListOfPeople() throws Exception {
-		 visit("/people/");
-	     assertHasContent("List");
+		 visit("/people");
+         System.out.println(getContent());
+	     assertHasContent("HEADER");
 	}
 	
 	@Test
 	public void shouldGetPeopleById() throws Exception {
-		 visit("/show");
-//		 System.out.println(getContent());
-	     assertHasContent("People: 15");
+		 visit("/people/15");
+		 System.out.println(getContent());
 	}
-	
 
 }

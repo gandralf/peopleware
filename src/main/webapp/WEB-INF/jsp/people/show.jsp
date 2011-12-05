@@ -1,1 +1,3 @@
-${string}
+<ul>
+    <li>${person}</li>
+</ul>
